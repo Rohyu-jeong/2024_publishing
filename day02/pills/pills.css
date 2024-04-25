@@ -1,0 +1,22 @@
+.all_pill {
+  background-color: #0078FF;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pill {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+}
