@@ -1,34 +1,26 @@
 .normal {
   background-color: black;
   color: white;
-  text-align: center;
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  font-weight: 800;
 }
 
 .kakao {
   background-color: #f7e111;
   color: black;
+}
+
+.apple {
+    /* 두께 스타일 색깔 */
+    border: 1px solid #dbdbdb;
+}
+
+.m_button {
   text-align: center;
   width: 400px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
   font-weight: 800;
-}
-
-.apple {
-    text-align: center;
-    width : 400px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* 두께 스타일 색깔 */
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-    font-weight: 800;
+  cursor: grab;
 }
 
 .register {
@@ -38,7 +30,7 @@
     padding-top: 20px;
 }
 
-.button {
+.button_mini {
     border: 1px solid #0078ff;
     padding-top: 3px;
     padding-bottom: 3px;

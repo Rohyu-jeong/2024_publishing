@@ -1,0 +1,61 @@
+.find_layout {
+  width: 400px;
+  height: 200px;
+  background-color: #4a76ba;
+  border: 1px solid #4a76ba;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  /* 안에 있는 내용만 보이는 넓이로 해주세요 */
+  width: fit-content;
+}
+
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.find_button {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 14px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.red {
+  color: #fe696a;
+}
+
+.blue {
+  color: #4476fe;
+}
+
+.content2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 14px;
+  width: 100%;
+  height: 100px;
+}
+
+.button2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

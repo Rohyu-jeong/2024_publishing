@@ -1,0 +1,9 @@
+.box {
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding: 30px;
+    font-size: 30px;
+    /* 텍스트 바꾸는 CSS */
+    text-transform: uppercase;
+}

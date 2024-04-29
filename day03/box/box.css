@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  width: 1000px;
+  height: 1000px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.yellow1 {
+  background-color: #f6e58d;
+}
+
+.yellow2 {
+  background-color: #f9ca24;
+}
+
+.skyblue1 {
+  background-color: #7ed6df;
+}
+
+.skyblue2 {
+  background-color: #22a6b3;
+}
