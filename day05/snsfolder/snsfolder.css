@@ -1,0 +1,88 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 350px;
+    height: 600px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, red, black);
+    align-items: center;
+    padding: 50px 25px 50px 25px;
+    transition: all 1s;
+}
+
+/* .card:hover {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+} */
+
+.profile, .sns-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.imageBox {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.imageBox > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 90% center;
+    transition: all 0.5s;
+}
+
+.imageBox > img:hover {
+    transform: scale(1.2);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.text > span {
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.button > span {
+    font-weight: 600;
+}
+
+.button:hover {
+    font-size: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logoBox > i {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+i:hover {
+    font-size: 30px;
+    color: #ff9a9e;
+}

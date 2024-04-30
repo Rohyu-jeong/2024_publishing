@@ -1,0 +1,16 @@
+.box {
+    /* viewport width */
+    /* 님 쓰는 브라우저의 넓이의 퍼센트 */
+    width: 80vw;
+    /* 님 쓰는 브라우저의 높이 퍼센트 */
+    height: 80vh;
+    background-color: aquamarine;
+    /* 모든[all] 변화가 0.5s 걸려주셈 */
+    transition: all 0.5s;
+}
+
+.box:hover {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
