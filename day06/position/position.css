@@ -1,0 +1,42 @@
+body {
+    height: 300vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+.black {
+    background-color: black;
+    z-index: 2;
+}
+
+.yellow {
+    background-color: yellowgreen;
+}
+
+.red {
+    position: fixed;
+    top: 0;
+    background-color: red;
+}
+
+.color-name {
+    /* relative : 자기 부모 기준으로 움직임 */
+    /* top:0, left:0, bottom:0, right:0 */
+
+    /* absolute : 단 모든 부모가 static이면 웹 브라우저 기준 */
+    /* absolute : 단 모든 부모가 static이 아니라면 자기 부모 기준 */
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
