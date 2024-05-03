@@ -1,0 +1,60 @@
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(main.png);
+}
+
+.first {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 60px;
+    padding-bottom: 100px;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.button  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 8px 15px 8px 15px;
+}
+
+.imageBox {
+    width: 25px;
+    height: 25px;
+}
+
+.imageBox > img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,158 @@
+.first {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-purple-200);
+}
+
+.content1 {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 30px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.button {
+  display: flex;
+  gap: 15px;
+}
+
+.button-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--neutrals-gray-10);
+  border-radius: 5px;
+}
+
+.button-imgBox {
+  width: 200px;
+}
+
+.button-imgBox > img {
+  width: 100%;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.image {
+  width: 800px;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.cardImageBox {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 600px;
+  height: 500px;
+}
+
+.cardImageBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+.imageBox {
+  width: 550px;
+  height: 100%;
+}
+
+.imageBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+.second {
+    width: 100vw;
+    height: 50vh;
+    background-color: #f1eee1;
+}
+
+.content2 {
+    max-width: var(--max-width);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e2d7c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBoxs {
+    display: flex;
+    gap: 20px;
+}
+
+.textBox {
+    width: 330px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.star > i {
+    color: var(--primary-purple-300);
+    font-size: 20px;
+}
+
+.textBox-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.textBoxImg {
+    width: 95px;
+    height: 25px;
+}
+
+.textBoxImg > img {
+    width: 100%;
+    height: 100%;
+}
+
+
