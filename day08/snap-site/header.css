@@ -1,0 +1,40 @@
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  position: fixed;
+  z-index: 3;
+}
+
+nav {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  color: #bbb;
+}
+
+.menu__main {
+  display: flex;
+  gap: 50px;
+}
