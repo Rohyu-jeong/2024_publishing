@@ -1,0 +1,154 @@
+.first {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.first > video {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.first__contents {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+}
+
+.first__contents__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.first__contents__text__title {
+  font-size: 120px;
+  color: white;
+}
+
+.first__contents__text__title2 {
+  display: flex;
+  flex-direction: column;
+  color: #aaa;
+}
+
+.first__contents__view {
+  width: fit-content;
+  padding: 10px 150px 10px 150px;
+  border: 1px solid white;
+  margin-top: 40px;
+  color: white;
+  font-size: 13px;
+}
+
+.second {
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+}
+
+.second__contents {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.second__contents__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.second__contents__recent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.second__contents__recent__news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.second__contents__recent__news__img {
+  width: 280px;
+  height: 130px;
+}
+
+.second__contents__recent__news__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second__contents__recent__news__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.second__contents__recent__news__text__title {
+  font-weight: 600;
+}
+
+.second__contents__recent__news__text__con {
+  color: #888;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .first__contents {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .first__contents__text__title {
+    font-size: 35px;
+  }
+
+  .first__contents__text__title2 {
+    font-size: 13px;
+  }
+
+  .first__contents__view {
+    padding: 10px 45px 10px 45px;
+    font-size: 13px;
+  }
+
+  .second {
+    height: 150vh;
+    display: flex;
+  }
+
+  .second__contents {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .second__contents__recent {
+    flex-direction: column;
+  }
+
+  .second__contents__recent__news {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second__contents__recent__news__text {
+    justify-content: center;
+    align-items: center;
+  }
+}
