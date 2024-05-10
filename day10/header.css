@@ -52,3 +52,30 @@ nav {
 .menu > i:hover {
     cursor: pointer;
 }
+
+.menuBar {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        max-width: 350px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo > img {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuBar {
+        display: block;
+    }
+
+}
