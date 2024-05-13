@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sixth {
+    width: 100vw;
+    height: 140vh;
+}
+
+.sixth__contents {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sixth__contents__title > span{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Pretendard-Regular';
+}
+
+.sixth__contents__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.sixth__contents__box {
+    width: 580px;
+    height: 300px;
+    position: relative;
+}
+
+.sixth__contents__box:hover {
+    cursor: pointer;
+}
+
+.sixth__contents__box__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sixth__contents__box__img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sixth__contents__box__text { 
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sixth__contents__box__text__title > span {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Pretendard-Regular';
+}
+
+.sixth__contents__box__text__con {
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+
+@media screen and (max-width:768px) {
+    .sixth {
+        height: 120vh;
+    }
+
+    .sixth__contents {
+        max-width: 350px;   
+        gap: 50px;
+    }
+
+    .sixth__contents__title > span{
+        font-size: 25px;
+    }
+
+    .sixth__contents__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .sixth__contents__box {
+        width: 350px;
+        height: 110px;
+        position: relative;
+    }
+
+    .sixth__contents__box__text { 
+        top: 30px;
+        left: 30px;
+        gap: 10px;
+    }
+
+    .sixth__contents__box__text__title > span {
+        font-size: 18px;
+    }
+
+    .sixth__contents__box__text__con {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.third {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .third__bg {
+    width: 480px;
+  }
+  
+  .third__bg > img {
+    width: 100%;
+  }
+  
+  .third__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 120px;
+    padding-top: 50px;
+  }
+  
+  .third__contents__logo {
+    width: 150px;
+  }
+  
+  .third__contents__logo > img {
+    width: 100%;
+  }
+  
+  .third__contents__con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .third__contents__con__box {
+    width: 150px;
+    height: 250px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .third__contents__con__box > span {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(117, 115, 115);
+    font-family: 'Pretendard-Regular';
+  }
+  
+  .third__contents__con__box__img {
+    width: 80px;
+  }
+  
+  .third__contents__con__box__img > img {
+    width: 100%;
+  }
+
+  @media screen and (max-width:786px) {
+    .third {
+        height: 70vh;
+      }
+
+    .third__bg {
+        width: 330px;
+    }
+
+    .third__contents {
+        gap: 50px;
+    }
+
+    .third__contents__con {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .third__contents__con__box {
+        width: 80px;
+        height: 130px;
+        gap: 30px;
+      }
+
+    .third__contents__con__box__img {
+        width: 40px;
+    }
+
+    .third__contents__con__box__img > img {
+        width: 100%;
+    }
+
+    .third__contents__con__box > span {
+        font-size: 10px;
+    }
+  }
