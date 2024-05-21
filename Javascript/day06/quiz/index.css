@@ -1,0 +1,58 @@
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.size-100 {
+    width: 100px;
+    height: 100px;
+}
+
+.size-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.size-300 {
+    width: 300px;
+    height: 300px;
+}
+
+.size-400 {
+    width: 400px;
+    height: 400px;
+}
+
+.size-500 {
+    width: 500px;
+    height: 500px;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.radius-30 {
+    border-radius: 30px;
+}
