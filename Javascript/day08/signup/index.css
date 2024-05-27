@@ -1,0 +1,29 @@
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.email, .password, .passwordC {
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.btn {
+    background-color: #bdbdbd;
+    color: white;
+    border: none;
+    padding: 10px 50px 10px 50px;
+}
+
+.checked {
+    color : red
+}
+
+.passed {
+    background-color: black;
+    color: white;
+}

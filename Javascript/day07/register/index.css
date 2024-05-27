@@ -1,0 +1,26 @@
+.optionList {
+    display: flex;
+    flex-direction: column;
+}
+
+.notChecked {
+    color: gray;
+}
+
+.checked {
+    color: black;
+}
+
+.notPassed {
+    background-color: #dbdbdb;
+}
+
+.passed {
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    padding: 20px;
+    width: 200px;
+}
