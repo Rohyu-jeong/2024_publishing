@@ -201,20 +201,28 @@ const data = [{"id":1,"fullName":"Mariana Turland","avatarImg":"https://robohash
 
 const list = document.querySelector(".list");
 
-const makeT = (data) => `
-    <h3>${data.fullName}</h3>
-    <span>${data.job}</span>
-    <span>${data.language}</span>
-`
-
-const makeP = (data) => {
+data.forEach((v) => {
+    const box = document.createElement("div")
+    const img = document.createElement("img")
     const div = document.createElement("div")
-    div.style.display = "flex"
-    div.appendChild()
-    div.appendChild(makeT(data))
-}
 
-data.forEach((v) => list.insertAdjacentHTML('beforeend', makeP(v)))
+    box.style.display = "flex"
+
+    img.src = v["avatarImg"]
+    img.classList.add("avatar")
+    div.innerHTML = `
+        <h3>${v["fullName"]}</h3>
+        <div>${v["job"]}</div>
+        <div>${v["language"]}</div>
+    `
+
+    box.appendChild(img)
+    box.appendChild(div)
+
+    list.appendChild(box)
+})
+
+
 
 
 

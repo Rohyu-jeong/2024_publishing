@@ -3,6 +3,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.avatarImg {
-    width: 30px;
+.avatar {
+    width: 100px;
 }
