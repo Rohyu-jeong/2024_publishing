@@ -20,6 +20,14 @@ backendData;
  
  // findLastIndex
 
+ const c = backendData.filter(({ipAddress}) => {
+   const ipArr = [...ipAddress]
+   const lastDotIndex = ipArr.findLastIndex((v) => v === ".")
+   const splicedArr = ipArr.splice(lastDotIndex + 1, ipArr.length).map((v) => parseInt(v))
+   const sum = splicedArr.reduce((a, c) => a + c)
+   return sum <= 10;
+ }).map(({id, color, ipAddress}) => ({id, color, ipAddress}));
+
 
 // 4. timezone이 알파벳 모음으로 시작하면, {timezone, carmake, phone [앞 세자리]}
 // const data4 = backendData.filter(({timezone}) => )
