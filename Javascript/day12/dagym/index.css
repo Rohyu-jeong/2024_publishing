@@ -1,0 +1,58 @@
+.container {
+    width: 100vw;
+}
+
+.contentList {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 10px 10px 10px;
+}
+
+.contentBox {
+    display: flex;
+    gap: 10px;
+}
+
+.imgBox {
+    width: 150px;
+    height: 150px;
+
+}
+
+.imgBox > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.infoHeart {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.infoHeart > i {
+    font-size: 20px;
+}
+
