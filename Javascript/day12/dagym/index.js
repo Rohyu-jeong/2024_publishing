@@ -75,7 +75,7 @@ const makeProgramService = (service) => {
             <span>${service}</span>
         </div>
         `
-    return program == "" ? "" : serviceList;
+    return service == "" ? "" : serviceList;
 }
 
 
