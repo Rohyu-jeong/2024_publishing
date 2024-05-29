@@ -42,14 +42,16 @@ const makePrice = (originalPrice, lowestPrice, period) => {
 
     const lowest = `
     <div class="price">
-        <span class="priceN">${lowestP}~/월</span>
+        <span class="priceN">${lowestP}~</span>
+        <span>/월</span>
     </div>
     `
     const origin = `
     <div class="price">
-        <div class="original">${originalP}</div>
-        <span>${discount}</span>
-        <span class="priceN">${lowestP}~/월</span>
+        <div class="original">${originalP}원</div>
+        <span class="discount">${discount}%</span>
+        <span class="priceN">${lowestP}~</span>
+        <span>/월</span>
     </div>
     `
 
@@ -93,10 +95,12 @@ centerList.forEach((v) => {
             <div class="infoHeart">
             <i class="fa-regular fa-heart"></i>
             </div>
+            <div class="infos">
             ${makeTags(v.tags)}
             ${makeGymName(v.gymName)}
             ${makeAddress(v.address)}
             ${makeReservation(v.isReservationRequired)}
+            </div>
             <div class="infoDailyPrice">
             ${makeDailyItem(v.hasDailyItem)}
             ${makeLowestPrice(v.isLowestPrice)}
