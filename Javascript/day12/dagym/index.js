@@ -42,20 +42,38 @@ const makePrice = (originalPrice, lowestPrice, period) => {
 
     const lowest = `
     <div class="price">
-        <span class="priceN">${lowestP}~</span>
-        <span>/월</span>
+        <span class="priceN">${lowestP}~/월</span>
     </div>
     `
     const origin = `
     <div class="price">
         <div class="original">${originalP}</div>
         <span>${discount}</span>
-        <span class="priceN">${lowestP}~</span>
-        <span>/월</span>
+        <span class="priceN">${lowestP}~/월</span>
     </div>
     `
 
     return originalPrice == lowestPrice ? lowest : origin
+}
+
+const makeProgramFree = (program) => {
+    const programList = `        
+        <div class="programBoxFree">
+            <div class="programFreeName">무료 프로그램</div>
+            <span>${program}</span>
+        </div>
+        `
+    return program == "" ? "" : programList;
+}
+
+const makeProgramService = (service) => {
+    const serviceList = `        
+        <div class="programBoxService">
+            <div class="programFreeName">무료 서비스</div>
+            <span>${service}</span>
+        </div>
+        `
+    return program == "" ? "" : serviceList;
 }
 
 
@@ -87,14 +105,8 @@ centerList.forEach((v) => {
         </div>
         </div>
         <div class="programBox">
-        <div class="programBoxFree">
-            <div class="programFreeName">무료 프로그램</div>
-            <span>O.T</span>
-        </div>
-        <div class="programBoxService">
-            <div class="programFreeName">무료 서비스</div>
-            <span>유료주차 가능</span>
-        </div>
+        ${makeProgramFree(v.program.free)}
+        ${makeProgramService(v.service.free)}
         </div>
     </div>
     `
