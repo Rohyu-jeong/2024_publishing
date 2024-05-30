@@ -9,7 +9,22 @@ const makeTags = (tags) => {
 
 const makeGymName = (gymName) => `<div class="infoGymName">${gymName}</div>`
 
-const makeAddress = (address) => `<div class="infoAddress">${address}</div>`
+const makeReview = (reviewRate, reviewCount) => {
+    const review = `
+        <div class="review">
+            <span class="reviewStar">
+                <i class="fa-solid fa-star"></i>
+                ${reviewRate}
+            </span>
+            <span class="reviewCount">
+                (${reviewCount})
+            </span>
+        </div>
+    `
+    return reviewRate != 0 ? review : ""
+}
+
+const makeAddress = (address) => `<span class="infoAddress">${address}</span>`
 
 const makeReservation = (isReservationRequired) => {
     const reservation = `
@@ -23,14 +38,14 @@ const makeReservation = (isReservationRequired) => {
 
 const makeDailyItem= (hasDailyItem) => {
     const daily = `
-        <div class="dailyLowest">일일권</div>
+        <span class="dailyLowest">일일권</span>
     `
     return hasDailyItem ? daily : ""
 }
 
 const makeLowestPrice= (isLowestPrice) => {
     const lowest = `
-        <div class="dailyLowest">다짐회원가</div>
+        <span class="dailyLowest">다짐회원가</span>
     `
     return isLowestPrice ? lowest : ""
 }
@@ -40,18 +55,22 @@ const makePrice = (originalPrice, lowestPrice, period) => {
     const lowestP = parseInt(lowestPrice / period)
     const discount = parseInt((originalPrice - lowestPrice) / originalPrice * 100)
 
+    
+
     const lowest = `
-    <div class="price">
-        <span class="priceN">${lowestP}~</span>
-        <span>/월</span>
+    <div class="priceL">
+        <span class="priceN">${lowestP}원~</span>
+        <span class="priceM">/월</span>
     </div>
     `
     const origin = `
-    <div class="price">
+    <div class="priceO">
         <div class="original">${originalP}원</div>
+        <div class="disPrice">
         <span class="discount">${discount}%</span>
-        <span class="priceN">${lowestP}~</span>
-        <span>/월</span>
+        <span class="priceN">${lowestP}원~</span>
+        <span class="priceM">/월</span>
+        </div>
     </div>
     `
 
@@ -62,7 +81,7 @@ const makeProgramFree = (program) => {
     const programList = `        
         <div class="programBoxFree">
             <div class="programFreeName">무료 프로그램</div>
-            <span>${program}</span>
+            <span class="programFreeNameList">${program}</span>
         </div>
         `
     return program == "" ? "" : programList;
@@ -72,7 +91,7 @@ const makeProgramService = (service) => {
     const serviceList = `        
         <div class="programBoxService">
             <div class="programFreeName">무료 서비스</div>
-            <span>${service}</span>
+            <span class="programFreeNameList">${service}</span>
         </div>
         `
     return service == "" ? "" : serviceList;
@@ -98,12 +117,17 @@ centerList.forEach((v) => {
             <div class="infos">
             ${makeTags(v.tags)}
             ${makeGymName(v.gymName)}
-            ${makeAddress(v.address)}
+                <div class="reviewAddress">
+                    ${makeReview(v.review.rate, v.review.count)}
+                    ${makeAddress(v.address)}
+                </div>
             ${makeReservation(v.isReservationRequired)}
             </div>
             <div class="infoDailyPrice">
+            <div class="infoDailyLosest">
             ${makeDailyItem(v.hasDailyItem)}
             ${makeLowestPrice(v.isLowestPrice)}
+            </div>
             ${makePrice(v.price.originalPrice, v.price.lowestPrice, v.price.period)}
             </div>
         </div>

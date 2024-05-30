@@ -266,7 +266,7 @@ data.forEach((v) => {
             <div class="info">
                 ${makeEmailTag(v.email)}
                 ${makeSsnTag(v.ssn)}
-                <${makeMaskedCardTag(v.card)}
+                ${makeMaskedCardTag(v.card)}
             </div>
         </div>
         `
