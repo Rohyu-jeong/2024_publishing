@@ -1,0 +1,41 @@
+header {
+    width: 100vw;
+    height: 44px;
+    background-color: white;
+    z-index: 3;
+    
+
+    position: fixed;
+}
+
+nav {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.headerLocation {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 900;
+}
+
+.headerIcon {
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.headerIcon > i {
+    font-size: 20px;
+    color: #301449;
+}
+
+.headerIcon > i:hover {
+    cursor: pointer;
+}

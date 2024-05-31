@@ -50,12 +50,11 @@ const makeLowestPrice= (isLowestPrice) => {
     return isLowestPrice ? lowest : ""
 }
 
-const makePrice = (originalPrice, lowestPrice, period) => {
-    const originalP = parseInt(originalPrice / period)
-    const lowestP = parseInt(lowestPrice / period)
+const makePrice = (originalPrice, lowestPrice, period, count) => {
+    const periodOrCount = period == null ? count : period
+    const originalP = parseInt(Math.floor(originalPrice / periodOrCount / 10) * 10)
+    const lowestP = parseInt(Math.floor(lowestPrice / periodOrCount / 10) * 10)
     const discount = parseInt((originalPrice - lowestPrice) / originalPrice * 100)
-
-    
 
     const lowest = `
     <div class="priceL">
@@ -128,7 +127,7 @@ centerList.forEach((v) => {
             ${makeDailyItem(v.hasDailyItem)}
             ${makeLowestPrice(v.isLowestPrice)}
             </div>
-            ${makePrice(v.price.originalPrice, v.price.lowestPrice, v.price.period)}
+            ${makePrice(v.price.originalPrice, v.price.lowestPrice, v.price.period, v.price.count)}
             </div>
         </div>
         </div>
