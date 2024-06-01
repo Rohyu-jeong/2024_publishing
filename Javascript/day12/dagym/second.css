@@ -1,0 +1,61 @@
+main {
+    width: 100vw;
+    padding-top: 70px;
+}
+
+.second {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.secondContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px 20px 10px;
+    border-bottom: 1px solid #f1f3f6;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.secondImgBox {
+    width: 150px;
+    height: 150px;
+
+}
+
+.secondImgBox > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.secondInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.secondHeart {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.secondProgramBox {
+    background-color: #f1f3f6;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

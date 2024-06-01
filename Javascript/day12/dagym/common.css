@@ -1,0 +1,152 @@
+main {
+    width: 100vw;
+    padding-top: 100px;
+    background-color: #f6f5f8;
+}
+
+.contentBox {
+    display: flex;
+    gap: 10px;
+}
+
+.secondContent:hover .infoGymName, .firstContent:hover .infoGymName{
+    color: blue;
+}
+
+.firstHeart > i, .secondHeart > i {
+    font-size: 20px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoTags {
+    font-size: 12px;
+    color: #999fa9;
+    font-weight: 700;
+}
+
+.infoGymName {
+    font-weight: 800;
+}
+
+.reviewAddress {
+    display: flex;
+    gap: 10px;
+}
+
+.review {
+    display: flex;
+    gap: 5px;
+}
+
+.reviewStar {
+    color: #ffc500;
+    font-size: 12px;
+}
+
+.reviewCount, .infoAddress {
+    color: #999fa9;
+    font-size: 12px;
+}
+
+.infoReser {
+    display: flex;
+}
+
+.infoReser > span {
+    padding: 5px;
+    font-size: 10px;
+}
+
+.infoReserIcon {
+    background-color: rgb(242, 230, 255);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.infoReserIcon > i {
+    color: rgb(191, 128, 255);
+}
+
+.infoDailyPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoDailyLosest {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.dailyLowest {
+    padding: 5px;
+    height: 10px;
+    font-size: 10px;
+    background-color: #eaeaff;
+    color: #5467f5;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.priceL {
+    display: flex;
+    align-items: end;
+}
+
+.priceO {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.original {
+    font-size: 10px;
+    color: #999fa9;
+    text-decoration: line-through;
+    text-align: end;
+}
+
+.discount {
+    color: #ff5555;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.priceN {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.priceM {
+    font-size: 14px;
+}
+
+.programBox {
+    background-color: #f1f3f6;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.programBoxFree, .programBoxService {
+    display: flex;
+    gap: 20px;
+}
+
+.programFreeName {
+    width: 100px;
+    font-size: 12px;
+    color: #999fa9;
+}
+
+.programFreeNameList {
+    font-size: 12px;
+}

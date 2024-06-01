@@ -1,9 +1,8 @@
 header {
     width: 100vw;
-    height: 44px;
+    height: 50px;
     background-color: white;
     z-index: 3;
-    
 
     position: fixed;
 }
@@ -13,18 +12,25 @@ nav {
     max-width: 800px;
     margin: 0 auto;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.headerNav {
     position: relative;
 }
 
 .headerLocation {
     text-align: center;
-    padding-top: 15px;
+    margin-top: 15px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .headerIcon {
     position: absolute;
     right: 0;
+    top: 15px;
     padding-right: 15px;
 
     display: flex;
@@ -32,10 +38,47 @@ nav {
 }
 
 .headerIcon > i {
-    font-size: 20px;
+    font-size: 22px;
     color: #301449;
 }
 
 .headerIcon > i:hover {
     cursor: pointer;
 }
+
+.headerMenu {
+    width: 100%;
+    padding-bottom: 15PX;
+    margin-top: 19px;
+    background-color: white;
+}
+
+.headerMenuButton {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.buttonBox {
+    border: 1px solid #d1d1d3;
+    border-radius: 25px;
+    padding: 10px 13px 10px 13px;
+    font-size: 12px;
+    color: #3d4149;
+    cursor: pointer;
+}
+
+.buttonBox:hover {
+    background-color: #d1d1d3;
+    color: black;
+    font-weight: 900;
+}
+
+.dailyBtn > i{
+    color: #5467f5;
+}
+
+.lowestBtn > i {
+    color: yellowgreen;
+}
+

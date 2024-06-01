@@ -13,26 +13,47 @@
     />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="second.css" />
+    <link rel="stylesheet" href="common.css">
     <script type="module" src="index.js"></script>
   </head>
   <body>
     <header>
         <nav>
-          <div class="headerLocation">
-            <span>중구 태평로 1가</span>
-            <i class="fa-solid fa-angle-down"></i>
+          <div class="headerNav">
+            <div class="headerLocation">
+              <span>중구 태평로 1가</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="headerIcon">
+              <i class="fa-solid fa-magnifying-glass glass"></i>
+              <i class="fa-solid fa-cart-shopping shopping"></i>
+            </div>
           </div>
-          <div class="headerIcon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+          <div class="headerMenu">
+            <div class="headerMenuButton">
+              <div class="buttonBox filterBtn">
+                <i class="fa-solid fa-bars"></i>
+                <span>필터</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="buttonBox dailyBtn">
+                <i class="fa-solid fa-ticket-simple"></i>
+                <span>일일권</span>
+              </div>
+              <div class="buttonBox lowestBtn">
+                <i class="fa-solid fa-seedling"></i>
+                <span>다짐회원가</span>
+              </div>
+            </div>
           </div>
         </nav>
     </header>
 
     <main>
-      <div class="contentList">
-      </div>
+      <section class="list first"></section>
+      <section class="list second"></section>
     </main>
   </body>
 </html>
