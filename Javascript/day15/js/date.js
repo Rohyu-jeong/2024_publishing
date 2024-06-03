@@ -1,5 +1,4 @@
-export const makeDate = () => {
-    const dateInfo = new Date();
+export const makeDate = (date) => {
     const dateInfos = {
         month : {
             1:"January", 2:"February", 3:"March", 4:"April", 5:"May", 6:"June", 7:"July", 8:"August", 9:"September", 10:"October", 11:"November", 12:"December"
@@ -12,11 +11,11 @@ export const makeDate = () => {
         }
     }
 
-    const makeDay = (dateInfo) => dateInfo < 3 ? dateInfo + dateInfos.day[dateInfo] : dateInfo + dateInfos.day[4]
+    const makeDay = (date) => date < 3 ? date + dateInfos.day[date] : date + dateInfos.day[4]
 
     return `
-        <span class="week">${dateInfos.week[dateInfo.getDay()]}, </span>
-        <span class="monthDay">${dateInfos.month[dateInfo.getMonth() + 1]} ${makeDay(dateInfo.getDate())}</span>
+        <span class="week">${dateInfos.week[date.getDay()]}, </span>
+        <span class="monthDay">${dateInfos.month[date.getMonth() + 1]} ${makeDay(date.getDate())}</span>
     `
  }
 
