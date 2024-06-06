@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Mini_handwriting';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_08@1.0/Mini_handwriting.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header { 
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+    font-family: 'Mini_handwriting';
+}
+
+nav {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    border-bottom: 1px solid #b7bfe6;
+    color: #778beb;
+}
+
+.headerIcon {
+    font-size: 25px;
+}
+
+.headerIcon > i:hover {
+    cursor: pointer;
+}
+
+.date {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.week {
+    font-size: 25px;
+    font-weight: 800;
+}
